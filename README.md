@@ -1,10 +1,11 @@
 # Controle  de Usuário
 
-#Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 ## Frontend:
--HTML5
--CSS3
+HTML5
+
+CSS3
 
 ## Back end:
 - PHP (puro)
