@@ -1,18 +1,28 @@
 # Controle  de Usuário
 
-## Linguagens utilizadas no Front end:
-- HTML
-- Css
+#Tecnologias Utilizadas
 
-## Linguagens utilizadas no Back end:
-- PHP
+## Frontend:
+-HTML5
+-CSS3
 
-## Linguagens utilizadas no Banco de dados:
-- Dbeaver
-- Sql
+## Back end:
+- PHP (puro)
 
+## Banco de Dados:
+- SQL (gerenciado via DBeaver)
 
-Esse site tem como objetivo de treinar a linguagem php e utilizar o modelo CRUD no padrão MVC
+## Funcionalidades:
+Cadastro de usuários
 
+Listagem de usuários
 
-link do controle de usuario: https://sahfroes.github.io/Controle-de-Usuario/
+Edição de dados
+
+Exclusão de registros
+
+## Arquitetura
+Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
+
+##  Link do Projeto
+https://sahfroes.github.io/Controle-de-Usuario/
