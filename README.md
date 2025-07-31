@@ -25,5 +25,4 @@ Exclusão de registros
 ## Arquitetura
 Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
 
-##  Link do Projeto
-https://sahfroes.github.io/Controle-de-Usuario/
+
