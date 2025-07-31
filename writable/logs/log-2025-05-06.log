@@ -1,0 +1,395 @@
+CRITICAL - 2025-05-06 11:32:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/create.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/create', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:48:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/create.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/create.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/create', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/create')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:53:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:54:15 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:54:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:55:05 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:55:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:55:06 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 11:55:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:02:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:02:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:02:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:02:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:04:19 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:04:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/novo-usuario.php"
+[Method: GET, Route: novo-usuario]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/novo-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/novo-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(19): view('usuario/novo-usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->novoUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-05-06 12:32:27 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: lista-usuario]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:33:05 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: novo-usuario]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:33:06 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: lista-usuario]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:33:07 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: /]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:33:22 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: /]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:33:23 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: /]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:35:09 --> ErrorException: Cannot redeclare App\Controllers\Usuario::listaUsuario()
+[Method: GET, Route: /]
+in APPPATH\Controllers\Usuario.php on line 83.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-05-06 12:41:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/edit.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/edit', [], true)
+ 3 APPPATH\Controllers\Usuario.php(52): view('usuario/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 12:45:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/edit.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/edit', [], true)
+ 3 APPPATH\Controllers\Usuario.php(52): view('usuario/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 12:46:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "/edit.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('/edit', [], true)
+ 3 APPPATH\Controllers\Usuario.php(52): view('/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 12:46:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/edit.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/edit.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/edit', [], true)
+ 3 APPPATH\Controllers\Usuario.php(55): view('usuario/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 12:47:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/editar-usuario.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/editar-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/editar-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(55): view('usuario/editar-usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 12:47:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/editar-usuario.php"
+[Method: GET, Route: edit/100]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/editar-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/editar-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(55): view('usuario/editar-usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('100')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:21:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "usuario/editar-usuario.php"
+[Method: GET, Route: edit/101]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('usuario/editar-usuario.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('usuario/editar-usuario', [], true)
+ 3 APPPATH\Controllers\Usuario.php(56): view('usuario/editar-usuario', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->edit('101')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:41:19 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: lista-usuario]
+in APPPATH\Views\lista-usuario.php on line 39.
+ 1 APPPATH\Views\lista-usuario.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\meu-formulario\\app\\Views\\lista-usuario.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meu-formulario\\app\\Views\\lista-usuario.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('lista-usuario', [], true)
+ 5 APPPATH\Controllers\Usuario.php(22): view('lista-usuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:41:39 --> ErrorException: Undefined variable $usuario
+[Method: GET, Route: lista-usuario]
+in APPPATH\Views\lista-usuario.php on line 39.
+ 1 APPPATH\Views\lista-usuario.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'C:\\xampp\\htdocs\\meu-formulario\\app\\Views\\lista-usuario.php', 39)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\meu-formulario\\app\\Views\\lista-usuario.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('lista-usuario', [], true)
+ 5 APPPATH\Controllers\Usuario.php(22): view('lista-usuario', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->listaUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:44:32 --> TypeError: CodeIgniter\BaseModel::timeToString(): Argument #1 ($properties) must be of type array, string given, called in C:\xampp\htdocs\meu-formulario\system\BaseModel.php on line 1872
+[Method: POST, Route: update/101]
+in SYSTEMPATH\BaseModel.php on line 1761.
+ 1 SYSTEMPATH\BaseModel.php(1872): CodeIgniter\BaseModel->timeToString('101')
+ 2 SYSTEMPATH\BaseModel.php(805): CodeIgniter\BaseModel->transformDataToArray('101', 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert('101', false)
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert('101', false)
+ 5 APPPATH\Controllers\Usuario.php(76): CodeIgniter\BaseModel->save('101', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->update('101')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:47:25 --> TypeError: CodeIgniter\BaseModel::timeToString(): Argument #1 ($properties) must be of type array, string given, called in C:\xampp\htdocs\meu-formulario\system\BaseModel.php on line 1872
+[Method: POST, Route: update/101]
+in SYSTEMPATH\BaseModel.php on line 1761.
+ 1 SYSTEMPATH\BaseModel.php(1872): CodeIgniter\BaseModel->timeToString('101')
+ 2 SYSTEMPATH\BaseModel.php(805): CodeIgniter\BaseModel->transformDataToArray('101', 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert('101', false)
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert('101', false)
+ 5 APPPATH\Controllers\Usuario.php(77): CodeIgniter\BaseModel->save('101', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->update('101')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 14:47:43 --> TypeError: CodeIgniter\BaseModel::timeToString(): Argument #1 ($properties) must be of type array, string given, called in C:\xampp\htdocs\meu-formulario\system\BaseModel.php on line 1872
+[Method: POST, Route: update/101]
+in SYSTEMPATH\BaseModel.php on line 1761.
+ 1 SYSTEMPATH\BaseModel.php(1872): CodeIgniter\BaseModel->timeToString('101')
+ 2 SYSTEMPATH\BaseModel.php(805): CodeIgniter\BaseModel->transformDataToArray('101', 'insert')
+ 3 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert('101', false)
+ 4 SYSTEMPATH\BaseModel.php(750): CodeIgniter\Model->insert('101', false)
+ 5 APPPATH\Controllers\Usuario.php(77): CodeIgniter\BaseModel->save('101', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->update('101')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
+CRITICAL - 2025-05-06 15:16:42 --> ParseError: syntax error, unexpected identifier "email", expecting "]"
+[Method: GET, Route: lista-usuario]
+in APPPATH\Models\UsuarioModel.php on line 62.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\meu-formulario\\app\\Models\\UsuarioModel.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UsuarioModel')
+ 3 APPPATH\Controllers\Usuario.php(19): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UsuarioModel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Usuario->listaUsuario()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\meu-formulario\\public\\index.php')
