@@ -1,6 +1,6 @@
 # Controle  de Usuário
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas:
 
 ## Frontend:
 HTML5
