@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="<?= base_url('style.css') ?>">
-  
+    
 </head>
 
 <body>
@@ -29,8 +28,8 @@
             <a href="#"> Esqueceu da sua conta?</a>
         </div>
 
-        <button type="submit" class="btn">Login</button>
-        <div class="register">
+        <button type="submit" class="botao">Login</button>
+        <div class="registrar">
             <p> Não tem uma conta? <a href="<?= base_url('registro') ?>">Registrar</a></p>
     </form>
 </div>

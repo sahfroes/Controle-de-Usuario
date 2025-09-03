@@ -25,4 +25,4 @@ $routes->get('login', 'Usuario::login');
 $routes->post('login', 'Usuario::autenticar');
 
 $routes->get('registro', 'Usuario::registro');
-$routes->post('registrar', 'Usuario::registrar');n
+$routes->post('registrar', 'Usuario::registrar');

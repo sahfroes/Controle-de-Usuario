@@ -27,7 +27,7 @@
             <a href="<?= base_url('lista-usuario') ?>" class="btn btn-primary">Lista</a>
         </div>
 
-        <footer class="text-center mt-5 mb-3 text-muted small">
+        <footer class="text-center mt-5 mb-3 text-muted">
             &copy; <?= date('Y') ?> Feito pos Sarah Fróes
         </footer>
     </div>

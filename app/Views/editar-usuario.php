@@ -10,41 +10,36 @@
 </head>
 <body>
 
-<div class="container">
-  <h1>Edição de usuário</h1>
+<div class="container mt-5 d-flex justify-content-center" style="max-width: 500px;">
+  <div class="w-100">
+    <h1 class="text-center mb-4">Edição de usuário</h1>
+    <form action="/update/<?= esc($usuario['id']) ?>" method="POST">
+        <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
 
-  <!-- Formulário corrigido -->
-  <form action="/update/<?= esc($usuario['id']) ?>" method="POST">
-      <input type="hidden" name="id" value="<?= $usuario['id'] ?>">
-
-      <div class="form-group row mb-2">
-        <label for="nome" class="col-sm-2 col-form-label">Nome</label>
-        <div class="col-sm-5">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
           <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" value="<?= isset($usuario['nome']) ? esc($usuario['nome']) : ''; ?>" required>
         </div>
-      </div>
 
-      <div class="form-group row mb-2">
-        <label for="email" class="col-sm-2 col-form-label">E-mail</label>
-        <div class="col-sm-5">
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="usuario@gmail.com" value="<?= isset($usuario['email']) ? esc($usuario['email']) : ''; ?>" required>
         </div>
-      </div>
 
-      <div class="form-group row mb-2">
-        <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-        <div class="col-sm-5">
-          <input type="password" class="form-control" id="senha" name="senha" placeholder="(minimo 6 caracteres)" >
+        <div class="mb-3">
+          <label for="senha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="senha" name="senha" placeholder="(mínimo 6 caracteres)">
+          <div id="avisoSenha" class="text-danger mt-1" style="display:none;">A senha deve ter pelo menos 6 caracteres.</div>
         </div>
-      </div>
-      
-      <button type="submit" class="btn btn-primary">Salvar</button>
-      <a href="/lista-usuario" class="btn btn-danger" >Cancelar </a>
-  </form>
+        
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a href="/lista-usuario" class="btn btn-danger">Cancelar</a>
+    </form>
+    <footer class="text-center mt-5 mb-3 text-muted small">
+      &copy; <?= date('Y') ?> Feito por Sarah Fróes
+    </footer>
+  </div>
 
-   <footer class="text-center mt-5 mb-3 text-muted">
-            &copy; <?= date('Y') ?> Feito por Sarah Fróes
-   </footer>
 </div>
     
 </body>
