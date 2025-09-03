@@ -22,6 +22,10 @@ Edição de dados
 
 Exclusão de registros
 
+## Em breve novas funcionalidades a serem aplicadas:
+Tela de login
+Tela de registro
+
 ## Arquitetura
 Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
 
