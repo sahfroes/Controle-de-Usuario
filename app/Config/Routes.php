@@ -26,3 +26,8 @@ $routes->post('login', 'Usuario::autenticar');
 
 $routes->get('registro', 'Usuario::registro');
 $routes->post('registrar', 'Usuario::registrar');
+
+
+$routes->get('redefinir-senha', 'Usuario::redefinirSenha');
+$routes->post('redefinir-senha', 'Usuario::processaRedefinirSenha');
+

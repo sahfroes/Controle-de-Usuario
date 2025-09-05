@@ -27,6 +27,11 @@
             <a href="<?= base_url('lista-usuario') ?>" class="btn btn-primary">Lista</a>
         </div>
 
+         <div class="d-flex justify-content-center align-items-center mb-4">
+            <span class="me-2">Acesse tambem pelo login:</span>
+            <a href="<?= base_url('login') ?>" class="btn btn-primary">Login</a>
+        </div>
+
         <footer class="text-center mt-5 mb-3 text-muted small">
             &copy; <?= date('Y') ?> Feito pos Sarah Fróes
         </footer>

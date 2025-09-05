@@ -131,9 +131,9 @@ public function autenticar()
     $model = new UsuarioModel();
     $usuario = $model->where('email', $email)->first();
 
-    if ($usuario && password_verify($senha, $usuario['senha'])) {
+   if ($usuario && $senha === $usuario['senha']) {
         session()->set('usuario_id', $usuario['id']);
-        return redirect()->to('/');
+        return redirect()->to('/lista-usuario');
     } else {
         return redirect()->back()->with('erro', 'E-mail ou senha inválidos.');
     }
@@ -150,7 +150,7 @@ public function registrar()
     $dados = [
         'nome'  => $this->request->getPost('nome'),
         'email' => $this->request->getPost('email'),
-        'senha' => password_hash($this->request->getPost('senha'),  PASSWORD_DEFAULT),
+        'senha' => $this->request->getPost('senha'),
     ];
 
     // Verifica se o e-mail já existe
@@ -164,4 +164,34 @@ public function registrar()
         return redirect()->back()->with('erro', 'Erro ao registrar. Tente novamente.');
     }
 }
+
+
+public function redefinirSenha()
+{
+    return view('redefinir-senha');
+}
+
+public function processaRedefinirSenha()
+{
+    $email = $this->request->getPost('email');
+    $novaSenha = $this->request->getPost('senha');
+    $model = new UsuarioModel();
+    $usuario = $model->where('email', $email)->first();
+
+    if ($usuario) {
+        $model->update($usuario['id'], ['senha' => $novaSenha]);
+        return redirect()->to('/login')->with('sucesso', 'Senha redefinida com sucesso!');
+    } else {
+        return redirect()->back()->with('erro', 'E-mail não encontrado.');
+    }
+}
+
+
+
+
+
+
+
+
+
 }
