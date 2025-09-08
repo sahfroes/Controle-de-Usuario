@@ -16,6 +16,10 @@ CSS3
 ## Framework utilizada para o php:
 - Codeigniter 4 (prático para utilizar o padrão mvc)
 
+## Acesso:
+-Ngrok (modelo free)
+Ele está acessível via um túnel público criado com ngrok, que permite o acesso ao meu ambiente de desenvolvimento local (o 'localhost')
+
 ## Funcionalidades:
 Cadastro de usuários
 
