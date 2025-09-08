@@ -13,6 +13,9 @@ CSS3
 ## Banco de Dados:
 - SQL (gerenciado via DBeaver)
 
+## Framework utilizada para o php:
+- Codeigniter 4 (prático para utilizar o padrão mvc)
+
 ## Funcionalidades:
 Cadastro de usuários
 
