@@ -13,14 +13,15 @@
 
 <body>
 
-  <header class="top-bar d-flex align-items-center p-3 bg-light shadow-sm">
-    <a href="<?= base_url('login') ?>" class="voltar me-3 text-decoration-none text-dark">
-      <span class="back-arrow fs-2">&#x2039;</span>
+<header class="top-bar d-flex align-items-center p-3 shadow-sm" style="background-color:#012f7a ;">
+    <a href="<?= base_url('login') ?>" class="voltar me-3 text-decoration-none text-white d-flex align-items-center">
+      <span class="back-arrow fs-2" >&#x2039;</span>
     </a>
-    <h1 class="m-0 fs-4">Voltar</h1>
+    <h1 class="m-0 fs-4 text-white" >Voltar</h1>
   </header>
 
-    <div class="container mt-5" style="max-width: 500px;">
+   <div class="container mt-5" style="max-width: 420px;">
+    <div class="card p-4 shadow-sm" style="background-color: #f7f7f7; border-radius: 15px;">
         <h1>Registro</h1>
 
         <form action="<?= base_url('registrar') ?>"  method="post">
@@ -56,13 +57,17 @@
         <input type="password" class="form-control" id="senha" name="senha" placeholder="Nova senha(6 caracteres)" required>
       </div>
 
-
-         <button type="submit"  class="btn btn-primary"class="btn">Registrar</button>
+ <button type="submit" class="btn w-100 text-white"
+          style="background-color: #004a99; border-radius: 25px;">
+         Registrar
+        </button>
 
 <div class="register">
             <p>Já tem uma conta? <a href="<?= base_url('login') ?>">Login</a></p>
         </div>
-       
+
+       </div>
+
         </form>
 
 
