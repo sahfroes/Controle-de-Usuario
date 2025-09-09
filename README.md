@@ -13,6 +13,13 @@ CSS3
 ## Banco de Dados:
 - SQL (gerenciado via DBeaver)
 
+## Framework utilizada para o php:
+- Codeigniter 4 (prático para utilizar o padrão mvc)
+
+## Acesso:
+-Ngrok (modelo free)
+Ele está acessível via um túnel público criado com ngrok, que permite o acesso ao meu ambiente de desenvolvimento local (o 'localhost')
+
 ## Funcionalidades:
 Cadastro de usuários
 
@@ -22,10 +29,12 @@ Edição de dados
 
 Exclusão de registros
 
-## Em breve novas funcionalidades a serem aplicadas:
+## novas recursos:
 -Tela de login
 
 -Tela de registro
+
+-Tela de redefinir senha 
 
 ## Arquitetura
 Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
