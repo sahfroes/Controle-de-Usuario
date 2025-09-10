@@ -8,14 +8,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-5" style="max-width: 500px;">
+    
+<header class="top-bar d-flex align-items-center p-3 shadow-sm" style="background-color: #012f7a">
+    <a href="<?= base_url('lista-usuario') ?>" class="voltar me-3 text-decoration-none text-white d-flex align-items-center">
+      <span class="back-arrow fs-2" >&#x2039;</span>
+    </a>
+    <h1 class="m-0 fs-4 text-white" >Voltar</h1>
+  </header>
+
+
+   <div class="container mt-5" style="max-width: 500px;">
+    <div class="card p-4 shadow-sm" style="background-color: #f7f7f7; border-radius: 15px;">
         <h1>Criar Novo Usuário</h1>
 
-        <form action="/store" method="post">
+        <form action="/store" method="post">    
 
-             <div class="input-group mb-3">
+         <div class="input-group mb-3">
         <span class="input-group-text bg-white">
-    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
   <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
   <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
 </svg>
@@ -42,23 +52,13 @@
         <input type="password" class="form-control" id="senha" name="senha" placeholder="Nova senha(6 caracteres)" required>
       </div>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
+   <button type="submit" class="btn btn-primary">Enviar</button>
             <a href="/lista-usuario" class="btn btn-danger">Cancelar</a>
-        </form>
 
+</form>
+</div>
 
-        <footer class="text-center mt-5 mb-3 text-muted small">
+<footer class="text-center mt-5 mb-3 text-muted small">
             &copy; <?= date('Y') ?> Feito por Sarah Fróes
         </footer>
-    </div>
-</body>
-
-
-
-
-   
-
-
-
-
-</html>
+   </div>        
