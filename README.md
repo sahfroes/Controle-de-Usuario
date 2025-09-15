@@ -29,12 +29,15 @@ Edição de dados
 
 Exclusão de registros
 
-## novas recursos:
+## novos recursos:
 -Tela de login
 
 -Tela de registro
 
 -Tela de redefinir senha 
+
+## Objetivo:
+Tem como objetivo de treinar com php e criar usuarios com aceso restrito com essa linguagem
 
 ## Arquitetura
 Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
