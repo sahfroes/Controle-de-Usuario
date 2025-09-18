@@ -17,9 +17,18 @@ class Usuario extends Controller{    //define a controller usuario e herda de ba
     public function listaUsuario()
 {
     $model = new UsuarioModel();
-    $data['usuarios'] = $model->findAll(); // Busca todos os usuários do banco
+   
+  $usuarioModel = new UsuarioModel();
 
-    return view('lista-usuario', $data); // Carrega a view 'lista-usuario.php'
+        // Pega 5 usuários por página
+        $data['usuarios'] = $usuarioModel->paginate(10, 'usuarios' );
+
+        // Objeto de paginação
+        $data['pager'] = $usuarioModel->pager;
+
+        // Retorna a view correta
+        return view('lista-usuario', $data);
+
 }
 
     public function criarUsuario(){ // metodo para exibir o formulário de criação 
@@ -124,6 +133,7 @@ public function login()
     return view('login');
 }
 
+
 public function autenticar()
 {
     $email = $this->request->getPost('email');
@@ -187,8 +197,49 @@ public function processaRedefinirSenha()
 }
 
 
+public function lista()
+{
+    $userModel = new App\Models\UserModel();
 
+    // Pagina mostrando 5 usuários por página
+    $data['usuarios'] = $userModel->paginate(5);
 
+    // Objeto de paginação
+    $data['pager'] = $userModel->pager;
+
+    // Aqui você chama a view "lista-usuario.php"
+    return view('usuarios/lista-usuario', $data);
+}
+
+// Exemplo de login
+public function auth()
+{
+    $session = session();
+    $userModel = new App\Models\UserModel();
+
+    $email = $this->request->getVar('email');
+    $password = $this->request->getVar('password');
+
+    $user = $userModel->where('email', $email)->first();
+
+    if ($user) {
+        if (password_verify($password, $user['password'])) {
+            // Salva dados do usuário na sessão
+            $session->set([
+                'id'       => $user['id'],
+                'nome'     => $user['nome'], // <-- importante
+                'email'    => $user['email'],
+                'logado'   => true
+            ]);
+
+            return redirect()->to('/lista-usuario');
+        } else {
+            return redirect()->back()->with('erro', 'Senha incorreta');
+        }
+    } else {
+        return redirect()->back()->with('erro', 'Usuário não encontrado');
+    }
+}
 
 
 

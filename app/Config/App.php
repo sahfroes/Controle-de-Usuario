@@ -16,7 +16,7 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
-    public string $baseURL = 'https://325e58e4f4cc.ngrok-free.app/'; //cria link para o ngrok e ser acessivel para outros aparelhos)
+    public string $baseURL = 'https://1c5464a27e5a.ngrok-free.app/'; //cria link para o ngrok e ser acessivel para outros aparelhos)
 //cd C:\Users\sarah.froes\Downloads\ngrok-v3-stable-windows-amd64
 //ngrok.exe http 8080
 

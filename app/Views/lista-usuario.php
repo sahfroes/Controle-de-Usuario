@@ -89,9 +89,31 @@
             
         </tbody>
         
+
+<?php $session = session(); ?>
+
+<h2>Bem-vindo, <?= esc($session->get('nome')); ?></h2>
+
+<?php $session = session(); ?>
+<?php if ($session->get('logado')): ?>
+    <h2>Bem-vindo, <?= esc($session->get('nome')); ?></h2>
+<?php else: ?>
+    
+<?php endif; ?>
+
+
     </table>
  
-      
+  
+<?php if ($pager) : ?>
+    <div class="d-flex justify-content-center mt-3">
+        <?= $pager->links('usuarios') ?>
+
+
+        
+    </div>
+<?php endif; ?>
+
 <script>
     //Pega o campo de pesquisa pelo Id
     const searchInput = document.getElementById('searchInput');

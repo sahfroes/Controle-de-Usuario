@@ -1,0 +1,24 @@
+DEBUG - 2025-09-15 13:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-15 14:23:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-15 16:43:13 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in VENDORPATH\composer\ClassLoader.php on line 429.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-09-15 14:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-15 16:49:27 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-15 14:50:53 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: login]
+in SYSTEMPATH\Router\RouteCollection.php on line 299.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-15 14:52:44 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: POST, Route: registrar]
+in VENDORPATH\composer\ClassLoader.php on line 429.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-09-15 16:55:01 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: login]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 213.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2025-09-15 14:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
