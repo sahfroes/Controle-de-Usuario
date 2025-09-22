@@ -14,106 +14,112 @@
 </head>
 <body>
 
-<!-- Container principal centralizado -->
-<div class="container" style="max-width: 900px; margin-top: 30px;">
 
- <!-- Título centralizado com ícone -->
-    <h1 class="mb-3 text-center">
-        <i class="bi bi-people-fill"></i>
-        Lista de Usuários
-    </h1>
 
-    <!-- Botão e barra de pesquisa juntos, abaixo do título -->
-    <div class="d-flex align-items-center justify-content-center mb-4">
-        <!-- Botão para criar novo usuário -->
-        <a href="/create" class="btn btn-success btn-sm me-2">
-            <i class="bi bi-person-plus-fill"></i> Novo Usuário
-        </a>
-        <!-- Barra de pesquisa com ícone -->
-        <div class="input-group" style="max-width: 350px;">
-            <span class="input-group-text bg-white border-end-0">
-     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+<body class="bg-light">
+
+<div class="d-flex justify-content-center align-items-center mt-4">
+    <div class="card shadow-lg rounded-3" style="width: 90%; max-width: 1100px;">
+        <div class="card-body">
+
+            <!-- Título centralizado com ícone -->
+            <h1 class="mb-3 text-center">
+                <i class="bi bi-people-fill"></i>
+                Lista de Usuários
+            </h1>
+
+            <!-- Botão e barra de pesquisa -->
+            <div class="d-flex align-items-center justify-content-center mb-4">
+                <a href="/create" class="btn btn-success btn-sm me-2">
+                    <i class="bi bi-person-plus-fill"></i> Novo Usuário
+                </a>
+                <div class="input-group" style="max-width: 350px;">
+                    <span class="input-group-text bg-white border-end-0">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
   <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
   <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
 </svg>
-            </span>
-            <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Pesquisar por ID, nome ou e-mail...">
+                    </span>
+                    <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Pesquisar por ID, nome ou e-mail...">
+                </div>
+            </div>
+
+            <!-- Tabela -->
+            <div class="table-responsive">
+                <table id="userTable" class="table table-striped table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php if (!empty($usuarios) && is_array($usuarios)): ?>
+                            <?php foreach ($usuarios as $row): ?>
+                                <tr>
+                                    <td><?= esc($row['id']) ?></td>
+                                    <td><?= esc($row['nome']) ?></td>
+                                    <td><?= esc($row['email']) ?></td>
+                                    <td><?= esc($row['senha']) ?></td>
+                                    <td>
+                                        <a href="/edit/<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
+                                        <a href="/delete/<?= $row['id'] ?>" class="btn btn-danger btn-sm">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+</svg>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        <?php else: ?>
+                            <tr>
+                                <td colspan="5" class="text-center">Nenhum usuário encontrado.</td>
+                            </tr>
+                        <?php endif; ?>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Paginação -->
+            <?php if ($pager) : ?>
+                <div class="d-flex justify-content-center mt-3">
+                    <?= $pager->links('usuarios') ?>
+                </div>
+            <?php endif; ?>
+
+
+<!--EXemplo de paginação-->
+            <nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+       
+
+            <!-- Boas-vindas -->
+            <?php $session = session(); ?>
+            <?php if ($session->get('logado')): ?>
+                <h5 class="mt-4 text-center text-success">Bem-vindo, <?= esc($session->get('nome')); ?></h5>
+            <?php endif; ?>
+
         </div>
     </div>
 </div>
-
-
-
-
-  
-
-
-<!--Tabela mostra os usuarios-->
-    <table id="userTable" class="table" border="1" style="max-width: 2000px; margin-top: 10px;">
-        <thead class>
-            <tr>
-                <th>ID</th>
-                <th>Nome</th>
-                <th>Email</th>
-                <th>Senha</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        
-<!--Exibe os usuarios vindo do php-->
-        <tbody>
-            <?php if (!empty($usuarios) && is_array($usuarios)): ?>
-                <?php foreach ($usuarios as $row): ?>
-                    <tr>
-                        <td><?= esc($row['id']) ?></td>
-                        <td><?= esc($row['nome']) ?></td>
-                        <td><?= esc($row['email']) ?></td>
-                        <td><?= esc($row['senha']) ?></td>
-                        <td>
-
-                        <!--Botoes de ação-->
-                             <a href="/edit/<?= $row['id'] ?>" class="btn btn-primary">Editar</a>
-                            <a href="/delete/<?= $row['id'] ?>" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-  <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-</svg></a>                        
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-
-                <!--Caso não tenha usuario-->
-                <tr>
-                    <td colspan="5">Nenhum usuário encontrado.</td>
-                </tr>
-            <?php endif; ?>
-            
-        </tbody>
-        
-
-<?php $session = session(); ?>
-
-<h2>Bem-vindo, <?= esc($session->get('nome')); ?></h2>
-
-<?php $session = session(); ?>
-<?php if ($session->get('logado')): ?>
-    <h2>Bem-vindo, <?= esc($session->get('nome')); ?></h2>
-<?php else: ?>
-    
-<?php endif; ?>
-
-
-    </table>
- 
-  
-<?php if ($pager) : ?>
-    <div class="d-flex justify-content-center mt-3">
-        <?= $pager->links('usuarios') ?>
-
-
-        
-    </div>
-<?php endif; ?>
-
 <script>
     //Pega o campo de pesquisa pelo Id
     const searchInput = document.getElementById('searchInput');
@@ -155,9 +161,9 @@
         }
     });
 </script>
+<footer class="text-center mt-5 mb-3 text-muted small">
+    &copy; <?= date('Y') ?> Feito por Sarah Fróes
+</footer>
 
-     <footer class="text-center mt-5 mb-3 text-muted small">
-            &copy; <?= date('Y') ?> Feito por Sarah Fróes
-   </footer>
 </body>
 </html>

@@ -51,7 +51,7 @@
       </div>
 
          <button type="submit" class="btn w-100 text-white"
-          style="background-color: #004a99; border-radius: 25px;">
+          style="background-color: #004a99;">
           Redefinir
         </button>
 

@@ -56,10 +56,11 @@
 
         <!-- Botão Azul -->
         <button type="submit" class="btn w-100 text-white"
-          style="background-color: #004a99; border-radius: 25px;">
+          style="background-color: #004a99; ">
           Entrar
         </button>
 
+       
         <!-- Links extras -->
         <div class="text-center mt-3">
           <small>
@@ -69,6 +70,11 @@
         </div>
       </form>
     </div>
+
+
+<!--autenticação-->
+
+
 
     <footer class="text-center mt-4 mb-3 text-muted small">
       &copy; <?= date('Y') ?> Feito por Sarah Fróes

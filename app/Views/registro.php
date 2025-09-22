@@ -57,10 +57,10 @@
         <input type="password" class="form-control" id="senha" name="senha" placeholder="Nova senha(6 caracteres)" required>
       </div>
 
- <button type="submit" class="btn w-100 text-white"
-          style="background-color: #004a99; border-radius: 25px;">
-         Registrar
-        </button>
+
+
+        <button type="submit" class="btn w-100 text-white"   style="background-color: #004a99;">
+        Registrar</button>
 
 <div class="register">
             <p>Já tem uma conta? <a href="<?= base_url('login') ?>">Login</a></p>
