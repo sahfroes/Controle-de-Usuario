@@ -16,6 +16,7 @@
       <h3 class="text-center mb-4">Login</h3>
 
       <form action="<?= base_url('login') ?>" method="post">
+        
         <!-- Campo Email -->
         <div class="input-group mb-3">
           <span class="input-group-text bg-white">
@@ -68,11 +69,15 @@
             Ainda não tem conta? <a href="<?= base_url('registro') ?>">Cadastre-se</a>
           </small>
         </div>
+
+
+
       </form>
     </div>
 
 
-<!--autenticação-->
+
+
 
 
 

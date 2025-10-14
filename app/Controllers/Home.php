@@ -2,10 +2,19 @@
 
 namespace App\Controllers;
 
+use App\Models\UsuarioModel;
+
 class Home extends BaseController
 {
-    public function index(): string
+    public function login(): string
     {
-        return view('welcome_message');
+        $usuarioModel = new UsuarioModel();
+
+        $dados = [
+            'lista-usuario' => $usuarioModel->paginate(10),
+            'pager' => $usuarioModel->pager
+    ];
+
+        return view('lista-usuario', $dados);
     }
 }

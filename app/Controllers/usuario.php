@@ -21,7 +21,7 @@ class Usuario extends Controller{    //define a controller usuario e herda de ba
   $usuarioModel = new UsuarioModel();
 
         // Pega 5 usuários por página
-        $data['usuarios'] = $usuarioModel->paginate(10, 'usuarios' );
+        $data['usuarios'] = $usuarioModel->paginate(5, 'usuarios' );
 
         // Objeto de paginação
         $data['pager'] = $usuarioModel->pager;
@@ -202,13 +202,13 @@ public function lista()
     $userModel = new App\Models\UserModel();
 
     // Pagina mostrando 5 usuários por página
-    $data['usuarios'] = $userModel->paginate(5);
+    $data['usuarios'] = $userModel->paginate(5, 'usuarios' );
 
     // Objeto de paginação
     $data['pager'] = $userModel->pager;
 
     // Aqui você chama a view "lista-usuario.php"
-    return view('usuarios/lista-usuario', $data);
+    return view('lista-usuario', $data);
 }
 
 // Exemplo de login

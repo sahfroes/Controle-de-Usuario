@@ -6,37 +6,41 @@ use App\Models\UserModel;
 
 class LoginController extends BaseController
 {
+    public function index()
+    {
+        return view('login');
+    }
+
     public function auth()
     {
         $session = session();
         $userModel = new UserModel();
 
         $email = $this->request->getVar('email');
-        $password = $this->request->getVar('password');
+        $password = $this->request->getVar('senha');
 
         $user = $userModel->where('email', $email)->first();
 
-        if ($user) {
-            if (password_verify($password, $user['password'])) {
-                // Salva os dados na sessão
-                $session->set([
-                    'id'     => $user['id'],
-                    'nome'   => $user['nome'],   // aqui tem que bater com o nome da sua coluna
-                    'email'  => $user['email'],
-                    'logado' => true
-                ]);
+        if ($user && password_verify($password, $user['senha'])) {
+            // Salvar dados na sessão
+            $session->set([
+                'id'    => $user['id'],
+                'name'  => $user['name'],
+                'email' => $user['email'],
+                'isLoggedIn' => true
+            ]);
 
-                return redirect()->to('/lista-usuario');
-            } else {
-                return redirect()->back()->with('erro', 'Senha incorreta');
-            }
+            // Redireciona para lista de usuários
+            return redirect()->to(base_url('lista-usuario'));
         } else {
-            return redirect()->back()->with('erro', 'Usuário não encontrado');
+            $session->setFlashdata('mensagem', 'Email ou senha inválidos!');
+            return redirect()->to(base_url('login'));
         }
     }
 
-    public function login()
+    public function logout()
     {
-        return view('login');
+        session()->destroy();
+        return redirect()->to(base_url('login'));
     }
 }
