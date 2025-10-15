@@ -15,6 +15,9 @@
 <body>
 
 
+            <!-- Boas-vindas -->
+
+
 
 <body class="bg-light">
 
@@ -28,9 +31,15 @@
                 Lista de Usuários
             </h1>
 
+<!--traz o nome do usuario-->
+            <?php if (isset($nome)): ?>
+   <h3>Bem-vindo <?= session()->get('nome'); ?></h3>
+
+<?php endif; ?>
+
             <!-- Botão e barra de pesquisa -->
             <div class="d-flex align-items-center justify-content-center mb-4">
-                <a href="/create" class="btn btn-success btn-sm me-2">
+   <a href="/create" class="btn btn-success btn-sm me-2">
                     <i class="bi bi-person-plus-fill"></i> Novo Usuário
                 </a>
                 <div class="input-group" style="max-width: 350px;">
@@ -43,6 +52,7 @@
                     <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Pesquisar por ID, nome ou e-mail...">
                 </div>
             </div>
+
 
             <!-- Tabela -->
             <div class="table-responsive">
@@ -84,6 +94,7 @@
             </div>
 
             <!-- Paginação 5:16 -->
+                        <!-- -->
             <?php if ($pager) : ?>
                 <div class="d-flex justify-content-center mt-3">
                     <?= $pager->links('usuarios', 'bootstrap') ?>
@@ -91,14 +102,7 @@
             <?php endif; ?>
 
 
-
-
-            <!-- Boas-vindas -->
-            <?php $session = session(); ?>
-            <?php if ($session->get('logado')): ?>
-                <h5 class="mt-4 text-center text-success">Bem-vindo, <?= esc($session->get('nome')); ?></h5>
-            <?php endif; ?>
-
+ 
         </div>
     </div>
 </div>

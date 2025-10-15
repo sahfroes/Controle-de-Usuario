@@ -26,6 +26,8 @@ class Usuario extends Controller{    //define a controller usuario e herda de ba
         // Objeto de paginação
         $data['pager'] = $usuarioModel->pager;
 
+         $data['nome'] = session()->get('nome');
+
         // Retorna a view correta
         return view('lista-usuario', $data);
 
@@ -142,7 +144,13 @@ public function autenticar()
     $usuario = $model->where('email', $email)->first();
 
    if ($usuario && $senha === $usuario['senha']) {
-        session()->set('usuario_id', $usuario['id']);
+        session()->set([
+    'usuario_id' => $usuario['id'],
+    'nome'       => $usuario['nome'],
+    'email'      => $usuario['email'],
+    'logado'     => true
+]);
+
         return redirect()->to('/lista-usuario');
     } else {
         return redirect()->back()->with('erro', 'E-mail ou senha inválidos.');
@@ -211,35 +219,7 @@ public function lista()
     return view('lista-usuario', $data);
 }
 
-// Exemplo de login
-public function auth()
-{
-    $session = session();
-    $userModel = new App\Models\UserModel();
 
-    $email = $this->request->getVar('email');
-    $password = $this->request->getVar('password');
-
-    $user = $userModel->where('email', $email)->first();
-
-    if ($user) {
-        if (password_verify($password, $user['password'])) {
-            // Salva dados do usuário na sessão
-            $session->set([
-                'id'       => $user['id'],
-                'nome'     => $user['nome'], // <-- importante
-                'email'    => $user['email'],
-                'logado'   => true
-            ]);
-
-            return redirect()->to('/lista-usuario');
-        } else {
-            return redirect()->back()->with('erro', 'Senha incorreta');
-        }
-    } else {
-        return redirect()->back()->with('erro', 'Usuário não encontrado');
-    }
-}
 
 
 
