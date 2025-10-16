@@ -151,7 +151,7 @@ public function autenticar()
     'logado'     => true
 ]);
 
-        return redirect()->to('/lista-usuario');
+        return redirect()->to('/bem-vindo');
     } else {
         return redirect()->back()->with('erro', 'E-mail ou senha inválidos.');
     }
@@ -221,8 +221,22 @@ public function lista()
 
 
 
+public function bemVindo() //o método index serve para listar todos os usuários cadastrador
+    {
+        $model = new UsuarioModel(); //instancia a model
+        $data['usuario'] = $model->findAll() ; // o array $data carrega os dados para a view usuarios/index,php (pega todos os usuarios) e o findAll() retorna todos os dados da tabela
+           
+        return view('bem-vindo' , $data); // passa dos dados para a view
+    }
 
 
+
+
+    public function logout()
+{
+    session()->destroy();
+    return redirect()->to(base_url('/')); // volta para a tela de login (rota '/')
+}
 
 
 }

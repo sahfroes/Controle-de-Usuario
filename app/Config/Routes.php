@@ -31,3 +31,8 @@ $routes->post('registrar', 'Usuario::registrar');
 $routes->get('redefinir-senha', 'Usuario::redefinirSenha');
 $routes->post('redefinir-senha', 'Usuario::processaRedefinirSenha');
 
+
+$routes->get('bem-vindo', 'Usuario::bemVindo');
+ $routes->post('bem-vindo', 'Usuario::bemVindo');
+
+ $routes->get('logout', 'Usuario::logout');

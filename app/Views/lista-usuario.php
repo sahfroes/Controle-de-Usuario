@@ -17,7 +17,17 @@
 
             <!-- Boas-vindas -->
 
+<div id="welcome" class="alert alert-success text-center fw-bold" style="animation: fadeOut 3s forwards;">
+   Bem-vinda de volta, <?= session('nome') ?>!
+</div>
 
+<style>
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  80% {opacity: 1;}
+  100% {opacity: 0; display: none;}
+}
+</style>
 
 <body class="bg-light">
 
@@ -32,10 +42,11 @@
             </h1>
 
 <!--traz o nome do usuario-->
-            <?php if (isset($nome)): ?>
-   <h3>Bem-vindo <?= session()->get('nome'); ?></h3>
+           
 
-<?php endif; ?>
+
+
+
 
             <!-- Botão e barra de pesquisa -->
             <div class="d-flex align-items-center justify-content-center mb-4">
