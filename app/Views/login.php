@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      background: linear-gradient(135deg, #e4e9ffff 0%, #afacb3ff 100%);
+      background: linear-gradient(135deg, #e4e9ffff 0%, #f5f3f8ff 100%);
       font-family: 'Poppins', sans-serif;
       min-height: 100vh;
       display: flex;
