@@ -18,6 +18,8 @@
       <form action="<?= base_url('login') ?>" method="post">
         
         <!-- Campo Email -->
+
+        <img src="https://cdn-icons-png.flaticon.com/512/847/847969.png" width="80" class="mb-3">
         <div class="input-group mb-3">
           <span class="input-group-text bg-white">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
@@ -88,3 +90,54 @@
     </footer>
   </div>
 </body>
+
+
+
+
+
+
+
+
+<style>
+
+body {
+  background: linear-gradient(135deg, #a92fdaff, #10b1ddff);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #8a1abeff;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #5c2481ff;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+}
+
+</style>
+
+
+
