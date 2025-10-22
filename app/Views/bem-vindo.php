@@ -93,7 +93,7 @@
       bottom: 1rem;
       left: 50%;
       transform: translateX(-50%);
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 1);
       font-size: 0.85rem;
     }
   </style>
