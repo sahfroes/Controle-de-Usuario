@@ -1,153 +1,168 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de Usuários</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Google Fonts para tipografia elegante -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     body {
-       background: linear-gradient(135deg, #e4e9ffff 0%, #f5f3f8ff 100%);
-      font-family: 'Poppins', sans-serif;
-      min-height: 100vh;
-      margin: 0;
+        background: linear-gradient(135deg, #e4e9ffff 0%, #f5f3f8ff 100%);
+        font-family: 'Poppins', sans-serif;
+        min-height: 100vh;
+        margin: 0;
     }
-    #welcome {
-      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-weight: 600;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Estilo da nova barra de navegação/header */
+    .navbar-welcome {
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        color: white;
+        font-weight: 600;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 0.75rem 1.5rem;
     }
+    .navbar-welcome .navbar-brand {
+        color: white;
+    }
+    .navbar-welcome .btn-outline-light {
+        --bs-btn-hover-bg: #ffffff;
+        --bs-btn-hover-color: #20c997;
+    }
+    
     .card {
-      background-color: rgba(255, 255, 255, 0.95);
-      border: none;
-      border-radius: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: rgba(255, 255, 255, 0.95);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        transform: translateY(-5px);
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     }
     .card-body {
-      padding: 2rem;
+        padding: 2rem;
     }
     h1 {
-      color: #333;
-      font-weight: 600;
-      font-size: 1.8rem;
+        color: #333;
+        font-weight: 600;
+        font-size: 1.8rem;
     }
     .bi-people-fill {
-      color: #667eea;
-      margin-right: 0.5rem;
+        color: #667eea;
+        margin-right: 0.5rem;
     }
     .btn-success {
-      background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
-      border: none;
-      border-radius: 10px;
-      font-weight: 500;
-      transition: background 0.3s ease, transform 0.2s ease;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+        border: none;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.2s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .btn-success:hover {
-      background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%);
-      transform: scale(1.05);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, #20c997 0%, #17a2b8 100%);
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
     .input-group-text {
-      border: none;
-      background-color: #f8f9fa;
-      color: #6c757d;
-      border-radius: 10px 0 0 10px;
+        border: none;
+        background-color: #f8f9fa;
+        color: #6c757d;
+        border-radius: 10px 0 0 10px;
     }
     .form-control {
-      border: none;
-      border-radius: 0 10px 10px 0;
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease;
+        border: none;
+        border-radius: 0 10px 10px 0;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
     }
     .form-control:focus {
-      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(102, 126, 234, 0.25);
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 3px rgba(102, 126, 234, 0.25);
     }
     .table {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .table-dark th {
-      background: linear-gradient(135deg, #343a40 0%, #495057 100%);
-      border: none;
+        background: linear-gradient(135deg, #343a40 0%, #495057 100%);
+        border: none;
     }
     .table-hover tbody tr:hover {
-      background-color: rgba(102, 126, 234, 0.1);
+        background-color: rgba(102, 126, 234, 0.1);
     }
     .btn-primary {
-      background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-      border: none;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s ease, transform 0.2s ease;
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.2s ease;
     }
     .btn-primary:hover {
-      background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
-      transform: scale(1.05);
+        background: linear-gradient(135deg, #0056b3 0%, #004085 100%);
+        transform: scale(1.05);
     }
     .btn-danger {
-      background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
-      border: none;
-      border-radius: 8px;
-      font-weight: 500;
-      transition: background 0.3s ease, transform 0.2s ease;
+        background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        border: none;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.2s ease;
     }
     .btn-danger:hover {
-      background: linear-gradient(135deg, #c82333 0%, #a02622 100%);
-      transform: scale(1.05);
+        background: linear-gradient(135deg, #c82333 0%, #a02622 100%);
+        transform: scale(1.05);
     }
     footer {
-      color: rgba(255, 255, 255, 0.95);
-      font-size: 0.85rem;
+        color: #555; /* Alterado para melhor contraste com fundo claro */
+        font-size: 0.85rem;
+    }
+    /* Classe para alinhar ações */
+    .actions-cell {
+        min-width: 100px;
+        text-align: center;
     }
   </style>
 </head>
 <body>
-  <!-- Boas-vindas -->
-  <div id="welcome" class="alert alert-success text-center fw-bold" style="animation: fadeOut 3s forwards;">
-    Bem-vinda de volta, <?= session('nome') ?>!
-  </div>
+
+  <nav class="navbar navbar-welcome mb-4">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1">
+        <i class="bi bi-person-check-fill"></i>
+        Bem-vinda de volta, <?= session('nome') ?>!
+      </span>
+      <a href="/logout" class="btn btn-outline-light btn-sm">
+        <i class="bi bi-box-arrow-right"></i> Sair
+      </a>
+    </div>
+  </nav>
 
   <div class="d-flex justify-content-center align-items-center mt-4">
     <div class="card shadow-lg rounded-3" style="width: 90%; max-width: 1100px;">
       <div class="card-body">
-        <!-- Título centralizado com ícone -->
-        <h1 class="mb-3 text-center">
-          <i class="bi bi-people-fill"></i>
-          Lista de Usuários
-        </h1>
-
-        <!-- Botão e barra de pesquisa -->
-        <div class="d-flex align-items-center justify-content-center mb-4 flex-wrap">
-          <a href="/create" class="btn btn-success btn-sm me-2 mb-2">
+        
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-2">
+          <h1 class="mb-0">
+            <i class="bi bi-people-fill"></i>
+            Lista de Usuários
+          </h1>
+          <a href="/create" class="btn btn-success">
             <i class="bi bi-person-plus-fill"></i> Novo Usuário
           </a>
-          <div class="input-group" style="max-width: 350px;">
-            <span class="input-group-text bg-white border-end-0">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
-                <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
-                <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492z"/>
-              </svg>
+        </div>
+
+        <div class="mb-4">
+          <div class="input-group" style="max-width: 450px;">
+            <span class="input-group-text">
+                <i class="bi bi-search"></i>
             </span>
-            <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Pesquisar por ID, nome ou e-mail...">
+            <input type="text" id="searchInput" class="form-control" placeholder="Pesquisar por ID, nome, e-mail, permissão...">
           </div>
         </div>
 
-        <!-- Tabela -->
         <div class="table-responsive">
           <table id="userTable" class="table table-striped table-hover align-middle">
             <thead class="table-dark">
@@ -155,9 +170,7 @@
                 <th>ID</th>
                 <th>Nome</th>
                 <th>Email</th>
-                <th>Senha</th>
-                <th>Ações</th>
-              </tr>
+                <th>Senha</th> <th>Status</th>    <th class="text-center">Ações</th> </tr>
             </thead>
             <tbody>
               <?php if (!empty($usuarios) && is_array($usuarios)): ?>
@@ -166,27 +179,40 @@
                     <td><?= esc($row['id']) ?></td>
                     <td><?= esc($row['nome']) ?></td>
                     <td><?= esc($row['email']) ?></td>
-                    <td><?= esc($row['senha']) ?></td>
+                    
+                    <td><?= isset($row['permissao']) ? esc($row['permissao']) : 'Usuário' ?></td>
+                    
                     <td>
-                      <a href="/edit/<?= $row['id'] ?>" class="btn btn-primary btn-sm">Editar</a>
-                      <a href="/delete/<?= $row['id'] ?>" class="btn btn-danger btn-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-                          <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
-                        </svg>
+                      <?php 
+                        $status = isset($row['status']) ? esc($row['status']) : 'ativo';
+                        $badgeClass = ($status == 'ativo') ? 'bg-success' : 'bg-secondary';
+                      ?>
+                      <span class="badge <?= $badgeClass ?>"><?= ucfirst($status) ?></span>
+                    </td>
+
+                    <td class="actions-cell">
+                      <a href="/edit/<?= $row['id'] ?>" class="btn btn-primary btn-sm" title="Editar">
+                        <i class="bi bi-pencil-fill"></i>
                       </a>
+                      <button type="button" class="btn btn-danger btn-sm" title="Excluir"
+                              data-bs-toggle="modal" 
+                              data-bs-target="#confirmDeleteModal"
+                              data-bs-id="<?= esc($row['id']) ?>"
+                              data-bs-nome="<?= esc($row['nome']) ?>">
+                        <i class="bi bi-trash-fill"></i>
+                      </button>
                     </td>
                   </tr>
                 <?php endforeach; ?>
               <?php else: ?>
                 <tr>
-                  <td colspan="5" class="text-center">Nenhum usuário encontrado.</td>
+                  <td colspan="6" class="text-center">Nenhum usuário encontrado.</td>
                 </tr>
               <?php endif; ?>
             </tbody>
           </table>
         </div>
 
-        <!-- Paginação -->
         <?php if ($pager): ?>
           <div class="d-flex justify-content-center mt-3">
             <?= $pager->links('usuarios', 'bootstrap') ?>
@@ -196,50 +222,88 @@
     </div>
   </div>
 
-  <script>
-    // Pega o campo de pesquisa pelo Id
-    const searchInput = document.getElementById('searchInput');
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel"><i class="bi bi-exclamation-triangle-fill text-danger"></i> Confirmar Exclusão</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Você tem certeza que deseja excluir o usuário <strong id="modalUserName"></strong>?
+          <p class="text-danger small mt-2">Esta ação não pode ser desfeita.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <a id="modalConfirmDeleteButton" href="#" class="btn btn-danger">Sim, excluir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="text-center mt-4 mb-3">
+    &copy; <?= date('Y') ?> Feito por Sarah Fróes
+  </footer>
 
-    // Pega apenas o corpo da tabela (tbody) onde estão os dados
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // --- SCRIPT DA BARRA DE PESQUISA (ATUALIZADO) ---
+    const searchInput = document.getElementById('searchInput');
     const table = document.getElementById('userTable').getElementsByTagName('tbody')[0];
 
-    // Evita que o enter recarregue a pagina
     searchInput.addEventListener('keydown', function(e) {
       if (e.key === "Enter") {
         e.preventDefault(); // evita submit ao pressionar Enter
       }
     });
 
-    // Evento disparado toda vez que o usuario digita algo no campo
     searchInput.addEventListener('keyup', function() {
-      // Converte o texto digitado para minusculas (para evitar erros ortograficos com letra minusculas e maiusculas)
+      // Converte o texto digitado para minusculas
       const filter = searchInput.value.toLowerCase();
-
-      // Pega todas as linhas da tabela
       const rows = table.getElementsByTagName('tr');
 
       // Percorre todas as linhas da tabela
       for (let i = 0; i < rows.length; i++) {
         // Pega o conteudo de cada celula da linha
-        const id = rows[i].cells[0].textContent.toLowerCase(); // coluna id
-        const name = rows[i].cells[1].textContent.toLowerCase(); // coluna nome
-        const email = rows[i].cells[2].textContent.toLowerCase(); // coluna email
+        const id = rows[i].cells[0].textContent.toLowerCase();        // Coluna 0: ID
+        const name = rows[i].cells[1].textContent.toLowerCase();      // Coluna 1: Nome
+        const email = rows[i].cells[2].textContent.toLowerCase();     // Coluna 2: Email
+        const permissao = rows[i].cells[3].textContent.toLowerCase(); // Coluna 3: Permissão
+        const status = rows[i].cells[4].textContent.toLowerCase();    // Coluna 4: Status
 
         // Verifica se o texto digitado está contido em alguma das colunas
-        if (id.includes(filter) || name.includes(filter) || email.includes(filter)) {
+        if (id.includes(filter) || 
+            name.includes(filter) || 
+            email.includes(filter) ||
+            permissao.includes(filter) ||
+            status.includes(filter)) {
           rows[i].style.display = ''; // mostra a linha
         } else {
           rows[i].style.display = 'none'; // esconde a linha
         }
       }
     });
+
+    // --- NOVO SCRIPT PARA O MODAL DE EXCLUSÃO ---
+    const confirmDeleteModal = document.getElementById('confirmDeleteModal');
+    if (confirmDeleteModal) {
+      confirmDeleteModal.addEventListener('show.bs.modal', function (event) {
+        // Botão que acionou o modal
+        const button = event.relatedTarget;
+        
+        // Extrair info dos atributos data-bs-*
+        const userId = button.getAttribute('data-bs-id');
+        const userName = button.getAttribute('data-bs-nome');
+
+        // Atualizar o conteúdo do modal
+        const modalUserName = confirmDeleteModal.querySelector('#modalUserName');
+        const modalConfirmButton = confirmDeleteModal.querySelector('#modalConfirmDeleteButton');
+
+        modalUserName.textContent = userName; // Coloca o nome do usuário no texto
+        modalConfirmButton.href = `/delete/${userId}`; // Define o link de exclusão
+      });
+    }
   </script>
 
-  <footer class="text-center mt-4 mb-3">
-    &copy; <?= date('Y') ?> Feito por Sarah Fróes
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

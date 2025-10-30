@@ -143,6 +143,7 @@
           <input type="password" class="form-control" id="senha" name="senha" placeholder="Nova senha (6 caracteres)" required>
         </div>
 
+
         <!-- Botão Registrar -->
         <button type="submit" class="btn w-100 text-white mb-3">Registrar</button>
 

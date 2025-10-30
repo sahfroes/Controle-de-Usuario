@@ -104,8 +104,9 @@ public function update($id)
         $dados['email'] = $email;
     }
 
-    if (!empty($senha)) {
-        $dados['senha'] = $senha;
+    if (!empty($senha) && $senha !== $usuarioAtual['senha']) {
+        $dados['senha'] = $email;
+       
     }
 
     // Só tenta atualizar se houver algo para atualizar

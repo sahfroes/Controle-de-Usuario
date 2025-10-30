@@ -88,11 +88,7 @@
     .btn-danger:hover {
       background: linear-gradient(135deg, #c82333 0%, #a02622 100%);
     }
-    footer {
-      position: absolute;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
+   footer {
       color: rgba(255, 255, 255, 1);
       font-size: 0.85rem;
     }
@@ -119,9 +115,7 @@
     </div>
   </div>
 
-  <footer class="text-center">
-    &copy; <?= date('Y') ?> Feito por Sarah Fróes
-  </footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

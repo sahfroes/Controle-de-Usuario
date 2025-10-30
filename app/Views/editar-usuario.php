@@ -113,7 +113,8 @@
     <div class="card p-4 shadow-sm">
       <h1>editar usuario</h1>
 
-      <form action="/store" method="post">
+      <form action="/update/<?= $usuario['id'] ?>" method="post">
+
         <!-- Campo Nome -->
         <div class="input-group mb-3">
           <span class="input-group-text">
