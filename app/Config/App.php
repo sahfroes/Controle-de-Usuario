@@ -16,8 +16,12 @@ class App extends BaseConfig
      *
      * E.g., http://example.com/
      */
+
     public string $baseURL = 'http://localhost:8080/'; //cria link para o ngrok e ser acessivel para outros aparelhos)
 //cd C:\Users\sarah.froes\Desktop\programas\ngrok-v3-stable-windows-amd64
+
+
+
 //ngrok.exe http 8080
 
 

@@ -123,7 +123,11 @@
               <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
             </svg>
           </span>
+
           <input type="text" class="form-control" id="nome" name="nome" value="<?=  $usuario['nome'] ?>"placeholder="Nome completo" required>
+
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
+
         </div>
 
         <!-- Campo Email -->
@@ -134,6 +138,7 @@
             </svg>
           </span>
           <input type="email" class="form-control" id="email" name="email" value="<?=  $usuario['email'] ?>"  placeholder="E-mail cadastrado" required>
+          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail cadastrado" required>
         </div>
 
         <!-- Campo Senha -->
