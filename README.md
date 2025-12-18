@@ -1,0 +1,50 @@
+# Controle  de Usuário
+
+## Tecnologias Utilizadas:
+
+## Frontend:
+HTML5
+
+CSS3
+
+## Back end:
+- PHP (puro)
+
+## Banco de Dados:
+- SQL (gerenciado via DBeaver)
+
+## Framework utilizada para o php:
+- Codeigniter 4 (prático para utilizar o padrão mvc)
+
+## Acesso:
+-Ngrok (modelo free)
+Ele está acessível via um túnel público criado com ngrok, que permite o acesso ao meu ambiente de desenvolvimento local (o 'localhost')
+
+## Funcionalidades:
+Cadastro de usuários
+
+Listagem de usuários
+
+Edição de dados
+
+Exclusão de registros
+
+## novos recursos:
+-Tela de login
+
+-Tela de registro
+
+-Tela de redefinir senha 
+
+## Objetivo:
+Tem como objetivo de treinar com php e criar usuarios com aceso restrito com essa linguagem
+
+## Arquitetura
+Aplicação desenvolvida no padrão MVC, com separação clara entre as camadas de modelo, visualização e controle.
+
+<p align="center">
+  <img src=https://i.pinimg.com/736x/4c/fd/e3/4cfde3b6faa8d0ccf8cb1ea6e62e70ea.jpg>
+</p>
+
+
+

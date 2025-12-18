@@ -1,0 +1,5 @@
+DEBUG - 2025-09-01 14:30:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-01 14:33:48 --> ErrorException: Maximum execution time of 60 seconds exceeded
+[Method: GET, Route: /]
+in SYSTEMPATH\Common.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
