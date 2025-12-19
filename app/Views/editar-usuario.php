@@ -126,7 +126,7 @@
 
           <input type="text" class="form-control" id="nome" name="nome" value="<?=  $usuario['nome'] ?>"placeholder="Nome completo" required>
 
-          <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome completo" required>
+          <input type="text" class="form-control" id="nome" name="nome" value="<?=  $usuario['nome'] ?>" placeholder="Nome completo" required>
 
         </div>
 
@@ -137,8 +137,8 @@
               <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zM.966 13.259l5.64-3.47L8 9.583l1.326.795 5.64 3.471A1 1 0 0 1 14 14H2a1 1 0 0 1-.966-.741z"/>
             </svg>
           </span>
-          <input type="email" class="form-control" id="email" name="email" value="<?=  $usuario['email'] ?>"  placeholder="E-mail cadastrado" required>
-          <input type="email" class="form-control" id="email" name="email" placeholder="E-mail cadastrado" required>
+          <input type="email" class="form-control" id="email" name="email" value="<?=  $usuario['email'] ?>"  placeholder="Novo E-mail cadastrado" required>
+          <input type="email" class="form-control" id="email" name="email" value="<?=  $usuario['email'] ?>"placeholder="E-mail cadastrado" required >
         </div>
 
         <!-- Campo Senha -->
